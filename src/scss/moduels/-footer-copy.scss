@@ -1,0 +1,35 @@
+.footer-content-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+    @include media(md){
+        padding: 150px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        font-family: var(--font-2);
+        font-weight: 400;
+        color: var(--color-6);
+        margin: 0;
+    }
+    ul.footer-menu {
+        list-style: none;
+        margin: 0;
+        li{
+            display: inline-block;
+        }
+        a{
+            font-size: 14px;
+            line-height: 22px;
+            font-family: var(--font-2);
+            font-weight: 400;
+            color: var(--color-6);
+            i.bi.bi-dot {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

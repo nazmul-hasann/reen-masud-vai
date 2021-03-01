@@ -1,0 +1,39 @@
+section.home-hero {
+    min-height: 650px;
+    height: 100vh;
+    max-height: 1000px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    h1{
+        letter-spacing: 3px;
+        margin-bottom: 38px;
+        @include media(md){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+    }
+
+    p{
+        color: var(--color-10) !important;
+        font-size:  24px;
+        line-height: 33px;
+        font-family: var(--font-2);
+        font-weight: 400;
+        margin-bottom: 65px;
+        @include media(md){
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .btn{
+       padding: 25px 65px; 
+    }
+}

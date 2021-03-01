@@ -1,0 +1,59 @@
+:root{
+    // fonts
+    --font-1: 'Lato', sans-serif;
+    --font-2: 'Source Sans Pro', sans-serif;
+    // colors
+    --color-1:#f5f7fa;
+    --color-2:#ffffff;
+    --color-3:#506a85;
+    --color-4:#5a748f;
+    --color-5:#73879c; 
+    --color-6:#96a5b4; 
+    --color-7:#00bc9c; 
+    --color-8:#2f4052; 
+    --color-9:#283645;
+    --color-10:#a3b1bf;
+    --color-11:#f2f5f7;
+    --color-12:#4e5c6c;
+
+    // color-hex
+    --color-1-hex:245, 247, 250;
+    --color-2-hex:255, 255, 255;
+    --color-3-hex:80, 106, 133;
+    --color-4-hex:90, 116, 143;
+    --color-5-hex:115, 135, 156;
+    --color-6-hex:150, 165, 180;
+    --color-7-hex:0, 188, 156;
+    --color-8-hex:47, 64, 82;
+    --color-9-hex:33, 34, 36;
+
+
+} 
+@mixin tranision($time:300ms) {
+    transition: all ease-in-out $time;
+    -webkit-transition: all ease-in-out $time;
+    -moz-transition:all ease-in-out $time;
+    -o-transition: all ease-in-out $time;
+}
+@mixin media($breakpoint) {
+    @if $breakpoint=='xs' {
+        @media(max-width:567px){
+            @content;
+        }
+    }
+    @if $breakpoint=='sm' {
+        @media(max-width:767px){
+            @content;
+        }
+    }
+    @if $breakpoint=='md' {
+        @media(max-width:991px){
+            @content;
+        }
+    }
+    @if $breakpoint=='lg' {
+        @media(min-width:992px){
+            @content;
+        }
+    }
+} 
