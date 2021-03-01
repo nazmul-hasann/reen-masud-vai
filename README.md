@@ -1,5 +1,5 @@
-git init
-git add .
-git commit -m "commit comment"
-git remote add origin <link>
-git push origin master
+git init <br/>
+git add . <br/>
+git commit -m "commit comment"<br/>
+git remote add origin <#link><br/>
+git push origin master<br/>
